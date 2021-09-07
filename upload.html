@@ -1,0 +1,27 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel=”stylesheet” href=”css/bootstrap.css”>
+<link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+<link rel="stylesheet" href="new-style.css">
+<script src="./script.js"></script>
+
+<form id="file-upload-form" class="upload">
+    <h1>File Upload</h1>
+    <p>Only PDF files</p>
+    <input type="file" id="file-upload" name="fileUpload" accept="pdf/*">
+
+    <label for="file-upload" id="file-drag">
+        <img id="file-image" src="./pdf_20px.png" alt="preview" class="hidden">
+        <div id="start">
+            <h3>Select a file or drag here</h3>
+        <div id="ntfile" class="hidden">Please select a file</div>
+        </div>
+        <div class="hidden" id="response">
+            <div id="msg">
+                <progress class="progress" id="file-progress" value="0">
+                    <span>0</span>%
+                  </progress>
+            </div>
+        </div>
+    </label>
+
+</form>

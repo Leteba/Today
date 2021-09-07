@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('./background.jpg') ;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: red;
+    background: linear-gradient(to bottom, #65dfc5,#6cdbeb);
+    width: 100vh;
+    height: 70vh;
+    margin: 10% auto;;
+    border-radius: 1rem;
+}
+
+.content-holder
+{
+    text-align: center;
+    color: white;
+    font-size: 12pt;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 15%;
+    padding: 50px;
+}
+
+.content-holder h1
+{
+    font-size: 24pt;
+    margin: 20px auto;
+}
+
+.content-holder p
+{
+    margin: 30px auto;
+}
+
+.content-holder button
+{
+    border:none;
+    font-size: 12pt;
+    padding: 10px;
+    border-radius: 0.9rem;
+    background-color: white;
+    width: 150px;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; 
+    }
+  }
+  
+.content-box-2{
+    background-color: white;
+
+    margin: 5px;
+}
+
+.signin-form
+{
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.signin-form h1
+{
+    color: black;
+    font-size: 18pt;
+    padding: 20px;
+}
+
+.input-field
+{
+    box-sizing: border-box;
+    font-size: 12pt;
+    padding: 10px;
+    border-radius: 1rem;
+    border: 1px solid #d3d3d3;
+    width: 250px;
+    outline: none;
+}
+
+.signin-btn{
+    box-sizing: border-box;
+    color: white;
+    font-size: 12pt;
+    padding: 13px;
+    border-radius: 1rem;
+    border: none;
+    width: 250px;
+    outline: none;
+    background-color: blueviolet;
+}
+
+
+
+.btn-signin
+{
+    display: none;
+}
+
+
+
+
+
+.signup-form
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+    display: none;
+}
+
+
+.signup-form h1
+{
+    color: black;
+    font-size: 18pt;
+    padding: 20px;
+}
+
+.signup-btn{
+    box-sizing: border-box;
+    color: white;
+    font-size: 12pt;
+    padding: 13px;
+    border-radius: 1rem;
+    border: none;
+    width: 250px;
+    outline: none;
+    background-color: skyblue;  
+}
+/* stlying for upload file*/
+
+.h1-file{
+    position: relative;
+    font-size: 16pt;
+    line-height: 1;
+    color: skyblue;
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 8pt;
+    color: steelblue;
+}
+
+.upload{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: red;
+    background: linear-gradient(to bottom, #65dfc5,#6cdbeb);
+    width: 100vh;
+    height: 70vh;
+    margin: 10% auto;;
+    border-radius: 1rem;
+}
+label {
+    float: left;
+    clear: both;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 7px;
+    border: 3px solid #eee;
+    transition: all .2s ease;
+    user-select: none;
+}
+
+
+#start{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+img{
+    margin-bottom: 5px;
+    transition: all .2s ease-in-out;
+}
+
+#response{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+#meg{
+    margin-bottom: 5px;
+}
+
+#file-image{
+    display: inline;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+#ntfile{
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+div{
+    margin: 0 0 2.5px 0;
+    color: rgb(155, 67, 67);
+}
+
+.progress {
+    appearance: none;
+    display: inline;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 180px;
+    height: 8px;
+    border: 0;
+    border-radius: 2rem;
+    background-color: #eee;
+    overflow: hidden;
+  }
+
+  .progress[value]
+  ::-webkit-progress-value{
+      border-radius: 2rem;
+      background-color: #eee ;
+  }
+  .progress[value]
+  ::-webkit-progress-value {
+    background: linear-gradient(to right, darken(grey,8%) 0%, red 50%);
+    border-radius: 2rem; 
+  }
+  .progress[value]
+  ::-moz-progress-bar {
+    background: linear-gradient(to right, darken(grey,8%) 0%, red 50%);
+    border-radius: 2rem; 
+  }
+
+
+/* Article */
+
+.art-container h1{
+    color: #00008b;
+}
+
+.art-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: red;
+    background: linear-gradient(to bottom, #65dfc5,#6cdbeb);
+    width: 100vh;
+    height: 70vh;
+    margin: 10% auto;;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.art-container button{
+    box-sizing: border-box;
+    color: white;
+    font-size: 12pt;
+    padding: 12px;
+    border-radius: 1rem;
+    border: none;
+    height: 50px;
+    width: 25px;
+    outline: none;
+    background-color: blueviolet;
+}
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ff4747;
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 7px;
+}
